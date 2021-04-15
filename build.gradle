@@ -1,0 +1,56 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = project.kotlin_version
+    ext.buildToolsVersion = project.buildToolsVersion
+
+    repositories {
+        maven { url 'https://jitpack.io' }
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$buildToolsVersion"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.github.dcendents:android-maven-gradle-plugin:2.1"
+        classpath 'com.github.mr-woody.UploadMavenPlugin:jitpack:1.2.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+apply plugin: 'jitpack.io.upload'
+jitpack{
+    module{
+        //对应的library name
+        name "library"
+        //对应格式为com.github.[YourUsername],例如：https://github.com/mr-woody/UploadMavenPlugin ,那么对应的UserName为：mr-woody
+        group "com.github.mr-woody"
+    }
+}
+
+
+ext {
+    //remote repository information
+    user="yuetao"
+    version='1.1.1-SNAPSHOT'
+    group_id="com.woodys.flowlayout"
+    artifact_id="flowlayout-library"
+    description="Android kotlin AutoFlowLayout library"
+    maven_url='xxxx/repository/xxx_snapshot/'
+}

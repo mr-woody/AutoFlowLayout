@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AutoFlowLayout">
+        <attr name="afl_fixRaw" format="integer" />
+        <attr name="afl_itemWidth" format="dimension" />
+        <attr name="afl_itemHeight" format="dimension"/>
+        <attr name="afl_itemHorizontalSpacing" format="dimension" />
+        <attr name="afl_itemMinHorizontalSpacing" format="dimension" />
+        <attr name="afl_itemVerticalSpacing" format="dimension" />
+        <attr name="afl_itemSizeMode" format="enum">
+            <enum name="item_width" value="0x00" />
+            <enum name="item_padding" value="0x01" />
+        </attr>
+    </declare-styleable>
+</resources>

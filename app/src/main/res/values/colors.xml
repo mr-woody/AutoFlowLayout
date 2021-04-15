@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="divide">#FFE5E5E5</color>
+    <color name="red">#FFFF5555</color>
+    <color name="pink">#FF6161</color>
+    <color name="light_pink">#FC9E9E</color>
+
+    <color name="gray">#E1E1E1</color>
+    <color name="dark_gray">#FFCCCCCC</color>
+    <color name="light_gray">#FF666666</color>
+
+    <color name="blue">#FF3E91DC</color>
+    <color name="dark_blue">#0D416F</color>
+
+
+
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <color name="alpha_80p_black">#CC000000</color>
+    <color name="alpha_70p_black">#B3000000</color>
+    <color name="alpha_50p_black">#80000000</color>
+    <color name="alpha_60p_black">#99000000</color>
+    <color name="alpha_40p_black">#66000000</color>
+    <color name="alpha_20p_black">#33000000</color>
+    <color name="alpha_15p_black">#26000000</color>
+    <color name="alpha_10p_black">#1A000000</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="alpha_80p_white">#CCFFFFFF</color>
+    <color name="alpha_60p_white">#99FFFFFF</color>
+    <color name="alpha_50p_white">#80FFFFFF</color>
+    <color name="alpha_30p_white">#4DFFFFFF</color>
+    <color name="alpha_15p_white">#26FFFFFF</color>
+    <color name="alpha_20p_white">#33FFFFFF</color>
+    <color name="alpha_10p_white">#1AFFFFFF</color>
+</resources>
